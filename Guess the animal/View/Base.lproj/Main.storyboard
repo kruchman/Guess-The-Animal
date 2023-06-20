@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5sx-Cf-8ix">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="3kv-3O-JAK">
+            <objects>
+                <viewController id="voU-hb-AAb" customClass="GameViewController" customModule="Guess_the_animal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7aC-9V-ZVX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aze-rM-3Qg">
+                                <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="apu-Yh-8ZO"/>
+                                    <constraint firstAttribute="width" constant="300" id="oyP-A0-P6f"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIp-rj-akQ">
+                                <rect key="frame" x="70" y="633" width="75" height="35"/>
+                                <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="firstButtonPressed:" destination="voU-hb-AAb" eventType="touchUpInside" id="6fK-ei-wK4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csR-74-rwK">
+                                <rect key="frame" x="70" y="703" width="75" height="35"/>
+                                <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="thirdButtonPressed:" destination="voU-hb-AAb" eventType="touchUpInside" id="JO3-WU-B78"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mg-GD-c7f">
+                                <rect key="frame" x="248" y="703" width="75" height="35"/>
+                                <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="fourthButtonPressed:" destination="voU-hb-AAb" eventType="touchUpInside" id="vtK-0a-zLC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3t-rD-ee3">
+                                <rect key="frame" x="248" y="633" width="75" height="35"/>
+                                <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="secondButtonPressed:" destination="voU-hb-AAb" eventType="touchUpInside" id="giD-Fy-sfu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucc-Ex-6QA">
+                                <rect key="frame" x="30" y="103" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Lq-DY-u3C"/>
+                                    <constraint firstAttribute="width" constant="40" id="nTj-bN-APC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="no-sound"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="soundOffButtonPressed:" destination="voU-hb-AAb" eventType="touchUpInside" id="m0I-Gs-x1X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Bl-434">
+                                <rect key="frame" x="323" y="103" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="VLN-th-JXz"/>
+                                    <constraint firstAttribute="height" constant="40" id="gWL-Ra-3cv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="volume"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="soundOnButtonPressed:" destination="voU-hb-AAb" eventType="touchUpInside" id="kqs-xo-GkP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yg9-MR-Te9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aze-rM-3Qg" firstAttribute="centerX" secondItem="7aC-9V-ZVX" secondAttribute="centerX" id="0gE-FR-s35"/>
+                            <constraint firstItem="csR-74-rwK" firstAttribute="top" secondItem="GIp-rj-akQ" secondAttribute="bottom" constant="35" id="1l7-fk-7Se"/>
+                            <constraint firstItem="yg9-MR-Te9" firstAttribute="trailing" secondItem="TOj-Bl-434" secondAttribute="trailing" constant="30" id="9PC-0J-qYZ"/>
+                            <constraint firstItem="GIp-rj-akQ" firstAttribute="leading" secondItem="yg9-MR-Te9" secondAttribute="leading" constant="70" id="KOD-un-fsX"/>
+                            <constraint firstItem="csR-74-rwK" firstAttribute="leading" secondItem="yg9-MR-Te9" secondAttribute="leading" constant="70" id="LBr-gk-97O"/>
+                            <constraint firstItem="TOj-Bl-434" firstAttribute="top" secondItem="yg9-MR-Te9" secondAttribute="top" id="VMU-jR-BBX"/>
+                            <constraint firstItem="Ucc-Ex-6QA" firstAttribute="top" secondItem="yg9-MR-Te9" secondAttribute="top" id="Wkp-ee-uob"/>
+                            <constraint firstItem="yg9-MR-Te9" firstAttribute="bottom" secondItem="csR-74-rwK" secondAttribute="bottom" constant="80" id="Xjm-Bt-B7D"/>
+                            <constraint firstItem="aze-rM-3Qg" firstAttribute="centerY" secondItem="7aC-9V-ZVX" secondAttribute="centerY" id="dix-27-Z9c"/>
+                            <constraint firstItem="9Mg-GD-c7f" firstAttribute="top" secondItem="b3t-rD-ee3" secondAttribute="bottom" constant="35" id="fiv-uy-v4t"/>
+                            <constraint firstItem="yg9-MR-Te9" firstAttribute="bottom" secondItem="9Mg-GD-c7f" secondAttribute="bottom" constant="80" id="fu0-Mm-dC8"/>
+                            <constraint firstItem="yg9-MR-Te9" firstAttribute="trailing" secondItem="9Mg-GD-c7f" secondAttribute="trailing" constant="70" id="gN6-hQ-Coc"/>
+                            <constraint firstItem="Ucc-Ex-6QA" firstAttribute="leading" secondItem="yg9-MR-Te9" secondAttribute="leading" constant="30" id="iPs-s1-3bK"/>
+                            <constraint firstItem="yg9-MR-Te9" firstAttribute="trailing" secondItem="b3t-rD-ee3" secondAttribute="trailing" constant="70" id="m3D-Fg-4rG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GrS-VN-aeB"/>
+                    <connections>
+                        <outlet property="animalImage" destination="aze-rM-3Qg" id="vBu-Sy-GlU"/>
+                        <outlet property="firstButton" destination="GIp-rj-akQ" id="sql-V9-pVP"/>
+                        <outlet property="fourthButton" destination="9Mg-GD-c7f" id="GCC-uT-OjV"/>
+                        <outlet property="secondButton" destination="b3t-rD-ee3" id="9YW-fU-1I3"/>
+                        <outlet property="soundOffButton" destination="Ucc-Ex-6QA" id="rIa-Tc-FTd"/>
+                        <outlet property="soundOnButton" destination="TOj-Bl-434" id="rjv-5Q-eSd"/>
+                        <outlet property="thirdButton" destination="csR-74-rwK" id="iLY-M0-dL3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gi0-2n-Vok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pRS-MZ-rYg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5sx-Cf-8ix" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fNd-cX-D0P">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="voU-hb-AAb" kind="relationship" relationship="rootViewController" id="zrp-tM-DVY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7Y-20-iMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no-sound" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="volume" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
