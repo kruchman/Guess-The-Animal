@@ -8,44 +8,54 @@
 import UIKit
 import AVFoundation
 
-class GameViewController: UIViewController {
+final class GameViewController: UIViewController {
     
-    var soundsModel = SoundsModel()
+    private var soundsModel = SoundsModel()
     
-    let animals = ["cat", "dog", "fox", "tiger", "crocodile", "rat", "pig"]
-
-    @IBOutlet weak var soundOnButton: UIButton!
+    private let animals = ["cat", "dog", "fox", "tiger", "crocodile", "rat", "pig"]
     
-    @IBOutlet weak var soundOffButton: UIButton!
+    @IBOutlet private weak var soundOnButton: UIButton!
     
-    @IBOutlet weak var animalImage: UIImageView!
+    @IBOutlet private weak var soundOffButton: UIButton!
     
-    @IBOutlet weak var firstButton: UIButton!
+    @IBOutlet weak private var animalImage: UIImageView!
     
-    @IBOutlet weak var secondButton: UIButton!
+    private var previousAnimal: String?
     
-    @IBOutlet weak var thirdButton: UIButton!
+    @IBOutlet private weak var firstButton: UIButton!
     
-    @IBOutlet weak var fourthButton: UIButton!
+    @IBOutlet private weak var secondButton: UIButton!
+    
+    @IBOutlet private weak var thirdButton: UIButton!
+    
+    @IBOutlet private weak var fourthButton: UIButton!
     
     override func viewDidLoad() {
+        
+        soundOnButton.titleLabel?.text = nil
+        soundOffButton.titleLabel?.text = nil
         
         updateButtonTitles()
         checkForMatching()
         soundOffButton.isHidden = true
-        
+    
     }
         
-        func updateButtonTitles() {
+        private func updateButtonTitles() {
             firstButton.setTitle(animals.randomElement()!, for: .normal)
             secondButton.setTitle(animals.randomElement()!, for: .normal)
             thirdButton.setTitle(animals.randomElement()!, for: .normal)
             fourthButton.setTitle(animals.randomElement()!, for: .normal)
             
-            let randomAnimalName = animals.randomElement()!
-            
+            var randomAnimalName = animals.randomElement()!
+            if randomAnimalName == previousAnimal {
+                repeat {
+                    randomAnimalName = animals.randomElement()!
+                } while randomAnimalName == previousAnimal
+            }
                 animalImage.image = UIImage(named: randomAnimalName)
                 animalImage.accessibilityIdentifier = randomAnimalName
+                previousAnimal = animalImage.accessibilityIdentifier
             
             while secondButton.currentTitle == firstButton.currentTitle {
                 secondButton.setTitle(animals.randomElement()!, for: .normal)
@@ -60,14 +70,14 @@ class GameViewController: UIViewController {
             }
         }
     
-    func checkForMatching() {
+   private func checkForMatching() {
 
         while firstButton.currentTitle != animalImage.accessibilityIdentifier && secondButton.currentTitle != animalImage.accessibilityIdentifier && thirdButton.currentTitle != animalImage.accessibilityIdentifier && fourthButton.currentTitle != animalImage.accessibilityIdentifier {
             updateButtonTitles()
         }
     }
     
-    func flashButton(_ button: UIButton) {
+   private func flashButton(_ button: UIButton) {
         let flashOverlay = UIView(frame: button.bounds)
         flashOverlay.backgroundColor = UIColor.red
         flashOverlay.alpha = 0.0
@@ -85,64 +95,68 @@ class GameViewController: UIViewController {
         })
     }
     
-    @IBAction func firstButtonPressed(_ sender: UIButton) {
+    @IBAction private func firstButtonPressed(_ sender: UIButton) {
         
         if sender.currentTitle == animalImage.accessibilityIdentifier {
-            animalImage.image = UIImage(named: animals.randomElement()!)
             updateButtonTitles()
             checkForMatching()
-            soundsModel.playSoundRight()
+                soundsModel.playSoundRight()
         } else {
-            flashButton(sender)
+            DispatchQueue.main.async {
+                self.flashButton(sender)
+            }
             soundsModel.playSoundWrong()
         }
         
     }
     
-    @IBAction func secondButtonPressed(_ sender: UIButton) {
+    @IBAction private func secondButtonPressed(_ sender: UIButton) {
         
         if sender.currentTitle == animalImage.accessibilityIdentifier {
-            animalImage.image = UIImage(named: animals.randomElement()!)
             updateButtonTitles()
             checkForMatching()
             soundsModel.playSoundRight()
         } else {
-            flashButton(sender)
+            DispatchQueue.main.async {
+                self.flashButton(sender)
+            }
             soundsModel.playSoundWrong()
         }
         
     }
     
-    @IBAction func thirdButtonPressed(_ sender: UIButton) {
+    @IBAction private func thirdButtonPressed(_ sender: UIButton) {
         
         if sender.currentTitle == animalImage.accessibilityIdentifier {
-            animalImage.image = UIImage(named: animals.randomElement()!)
             updateButtonTitles()
             checkForMatching()
             soundsModel.playSoundRight()
         } else {
-            flashButton(sender)
+            DispatchQueue.main.async {
+                self.flashButton(sender)
+            }
             soundsModel.playSoundWrong()
         }
         
     }
     
     
-    @IBAction func fourthButtonPressed(_ sender: UIButton) {
+    @IBAction private func fourthButtonPressed(_ sender: UIButton) {
         
         if sender.currentTitle == animalImage.accessibilityIdentifier {
-            animalImage.image = UIImage(named: animals.randomElement()!)
             updateButtonTitles()
             checkForMatching()
             soundsModel.playSoundRight()
         } else {
-            flashButton(sender)
+            DispatchQueue.main.async {
+                self.flashButton(sender)
+            }
             soundsModel.playSoundWrong()
         }
         
     }
     
-    @IBAction func soundOnButtonPressed(_ sender: UIButton) {
+    @IBAction private func soundOnButtonPressed(_ sender: UIButton) {
         
         soundsModel.isSoundOn = true
         soundsModel.disableSound()
@@ -150,7 +164,7 @@ class GameViewController: UIViewController {
         
     }
     
-    @IBAction func soundOffButtonPressed(_ sender: UIButton) {
+    @IBAction private func soundOffButtonPressed(_ sender: UIButton) {
         
         soundsModel.isSoundOn = false
         soundsModel.enableSound()
@@ -158,8 +172,9 @@ class GameViewController: UIViewController {
         
     }
     
-    func updateSoundButtons() {
+    private func updateSoundButtons() {
         soundOnButton.isHidden = soundsModel.isSoundOn
         soundOffButton.isHidden = !soundsModel.isSoundOn
         }
+    
 }

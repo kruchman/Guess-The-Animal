@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5sx-Cf-8ix">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,7 +12,7 @@
         <!--Game View Controller-->
         <scene sceneID="3kv-3O-JAK">
             <objects>
-                <viewController id="voU-hb-AAb" customClass="GameViewController" customModule="Guess_the_animal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="voU-hb-AAb" customClass="GameViewController" customModule="Guess_the_animal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7aC-9V-ZVX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +26,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIp-rj-akQ">
                                 <rect key="frame" x="70" y="633" width="75" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="buttonOne"/>
                                 <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
@@ -36,6 +38,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csR-74-rwK">
                                 <rect key="frame" x="70" y="703" width="75" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="buttonThree"/>
                                 <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -45,6 +48,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mg-GD-c7f">
                                 <rect key="frame" x="248" y="703" width="75" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="buttonFour"/>
                                 <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -54,6 +58,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3t-rD-ee3">
                                 <rect key="frame" x="248" y="633" width="75" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="buttonTwo"/>
                                 <color key="tintColor" red="0.38431376220000002" green="0.81960785390000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -63,6 +68,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucc-Ex-6QA">
                                 <rect key="frame" x="30" y="103" width="40" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SoundOff"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6Lq-DY-u3C"/>
                                     <constraint firstAttribute="width" constant="40" id="nTj-bN-APC"/>
@@ -77,6 +83,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Bl-434">
                                 <rect key="frame" x="323" y="103" width="40" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SoundOn"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="VLN-th-JXz"/>
                                     <constraint firstAttribute="height" constant="40" id="gWL-Ra-3cv"/>

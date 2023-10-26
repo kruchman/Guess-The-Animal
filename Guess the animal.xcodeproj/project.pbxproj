@@ -12,6 +12,8 @@
 		793997052A2EC7D6009EA5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793997032A2EC7D6009EA5BF /* Main.storyboard */; };
 		793997072A2EC7D7009EA5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793997062A2EC7D7009EA5BF /* Assets.xcassets */; };
 		7939970A2A2EC7D7009EA5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793997082A2EC7D7009EA5BF /* LaunchScreen.storyboard */; };
+		79CAF7EB2ACB34F900A2111A /* GameViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAF7EA2ACB34F900A2111A /* GameViewControllerUnitTests.swift */; };
+		79CAF80B2ACB66AA00A2111A /* GameViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAF80A2ACB66AA00A2111A /* GameViewControllerUITests.swift */; };
 		79D2BD322A3D533300A2181F /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79D2BD312A3D533300A2181F /* wrong.mp3 */; };
 		79D2BD362A3E8AFB00A2181F /* right second.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79D2BD332A3E8AFB00A2181F /* right second.mp3 */; };
 		79D2BD372A3E8AFB00A2181F /* right third.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79D2BD342A3E8AFB00A2181F /* right third.mp3 */; };
@@ -19,6 +21,23 @@
 		79D2BD402A3FDB5000A2181F /* SoundsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D2BD3F2A3FDB5000A2181F /* SoundsModel.swift */; };
 		79DA1FA82A38074300E4A246 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA1FA72A38074300E4A246 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79CAF7EC2ACB34F900A2111A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793996F22A2EC7D6009EA5BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793996F92A2EC7D6009EA5BF;
+			remoteInfo = "Guess the animal";
+		};
+		79CAF80E2ACB66AA00A2111A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793996F22A2EC7D6009EA5BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793996F92A2EC7D6009EA5BF;
+			remoteInfo = "Guess the animal";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		793996FA2A2EC7D6009EA5BF /* Guess the animal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess the animal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +47,10 @@
 		793997062A2EC7D7009EA5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		793997092A2EC7D7009EA5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7939970B2A2EC7D7009EA5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CAF7E82ACB34F900A2111A /* GameViewControllerUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameViewControllerUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CAF7EA2ACB34F900A2111A /* GameViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		79CAF8082ACB66AA00A2111A /* GameViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CAF80A2ACB66AA00A2111A /* GameViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerUITests.swift; sourceTree = "<group>"; };
 		79D2BD312A3D533300A2181F /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		79D2BD332A3E8AFB00A2181F /* right second.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "right second.mp3"; sourceTree = "<group>"; };
 		79D2BD342A3E8AFB00A2181F /* right third.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "right third.mp3"; sourceTree = "<group>"; };
@@ -44,6 +67,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79CAF7E52ACB34F900A2111A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAF8052ACB66AA00A2111A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -51,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				793996FC2A2EC7D6009EA5BF /* Guess the animal */,
+				79CAF8022ACB51FB00A2111A /* Tests */,
 				793996FB2A2EC7D6009EA5BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				793996FA2A2EC7D6009EA5BF /* Guess the animal.app */,
+				79CAF7E82ACB34F900A2111A /* GameViewControllerUnitTests.xctest */,
+				79CAF8082ACB66AA00A2111A /* GameViewControllerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,17 +106,50 @@
 		793996FC2A2EC7D6009EA5BF /* Guess the animal */ = {
 			isa = PBXGroup;
 			children = (
+				793996FD2A2EC7D6009EA5BF /* AppDelegate.swift */,
+				793996FF2A2EC7D6009EA5BF /* SceneDelegate.swift */,
 				79D2BD3E2A3FDB4300A2181F /* Model */,
 				79D2BD422A4127D000A2181F /* View */,
 				79D2BD412A4127B000A2181F /* Controller */,
-				793996FD2A2EC7D6009EA5BF /* AppDelegate.swift */,
-				793996FF2A2EC7D6009EA5BF /* SceneDelegate.swift */,
-				793997062A2EC7D7009EA5BF /* Assets.xcassets */,
+				798A13772AEAB01D0017586A /* Utilities */,
 				793997082A2EC7D7009EA5BF /* LaunchScreen.storyboard */,
-				7939970B2A2EC7D7009EA5BF /* Info.plist */,
 				79D2BD2E2A3D52E300A2181F /* Sounds */,
 			);
 			path = "Guess the animal";
+			sourceTree = "<group>";
+		};
+		798A13772AEAB01D0017586A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7939970B2A2EC7D7009EA5BF /* Info.plist */,
+				793997062A2EC7D7009EA5BF /* Assets.xcassets */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		79CAF7E92ACB34F900A2111A /* GameViewControllerUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				79CAF7EA2ACB34F900A2111A /* GameViewControllerUnitTests.swift */,
+			);
+			path = GameViewControllerUnitTests;
+			sourceTree = "<group>";
+		};
+		79CAF8022ACB51FB00A2111A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				79CAF8092ACB66AA00A2111A /* GameViewControllerUITests */,
+				79CAF7E92ACB34F900A2111A /* GameViewControllerUnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		79CAF8092ACB66AA00A2111A /* GameViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79CAF80A2ACB66AA00A2111A /* GameViewControllerUITests.swift */,
+			);
+			path = GameViewControllerUITests;
 			sourceTree = "<group>";
 		};
 		79D2BD2E2A3D52E300A2181F /* Sounds */ = {
@@ -134,6 +207,42 @@
 			productReference = 793996FA2A2EC7D6009EA5BF /* Guess the animal.app */;
 			productType = "com.apple.product-type.application";
 		};
+		79CAF7E72ACB34F900A2111A /* GameViewControllerUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CAF7F02ACB34F900A2111A /* Build configuration list for PBXNativeTarget "GameViewControllerUnitTests" */;
+			buildPhases = (
+				79CAF7E42ACB34F900A2111A /* Sources */,
+				79CAF7E52ACB34F900A2111A /* Frameworks */,
+				79CAF7E62ACB34F900A2111A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79CAF7ED2ACB34F900A2111A /* PBXTargetDependency */,
+			);
+			name = GameViewControllerUnitTests;
+			productName = GameViewControllerUnitTests;
+			productReference = 79CAF7E82ACB34F900A2111A /* GameViewControllerUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79CAF8072ACB66AA00A2111A /* GameViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CAF8102ACB66AA00A2111A /* Build configuration list for PBXNativeTarget "GameViewControllerUITests" */;
+			buildPhases = (
+				79CAF8042ACB66AA00A2111A /* Sources */,
+				79CAF8052ACB66AA00A2111A /* Frameworks */,
+				79CAF8062ACB66AA00A2111A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79CAF80F2ACB66AA00A2111A /* PBXTargetDependency */,
+			);
+			name = GameViewControllerUITests;
+			productName = GameViewControllerUITests;
+			productReference = 79CAF8082ACB66AA00A2111A /* GameViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +255,14 @@
 				TargetAttributes = {
 					793996F92A2EC7D6009EA5BF = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					79CAF7E72ACB34F900A2111A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 793996F92A2EC7D6009EA5BF;
+					};
+					79CAF8072ACB66AA00A2111A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 793996F92A2EC7D6009EA5BF;
 					};
 				};
 			};
@@ -163,6 +280,8 @@
 			projectRoot = "";
 			targets = (
 				793996F92A2EC7D6009EA5BF /* Guess the animal */,
+				79CAF7E72ACB34F900A2111A /* GameViewControllerUnitTests */,
+				79CAF8072ACB66AA00A2111A /* GameViewControllerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +301,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79CAF7E62ACB34F900A2111A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAF8062ACB66AA00A2111A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -196,7 +329,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79CAF7E42ACB34F900A2111A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CAF7EB2ACB34F900A2111A /* GameViewControllerUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAF8042ACB66AA00A2111A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CAF80B2ACB66AA00A2111A /* GameViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79CAF7ED2ACB34F900A2111A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793996F92A2EC7D6009EA5BF /* Guess the animal */;
+			targetProxy = 79CAF7EC2ACB34F900A2111A /* PBXContainerItemProxy */;
+		};
+		79CAF80F2ACB66AA00A2111A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793996F92A2EC7D6009EA5BF /* Guess the animal */;
+			targetProxy = 79CAF80E2ACB66AA00A2111A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		793997032A2EC7D6009EA5BF /* Main.storyboard */ = {
@@ -346,6 +508,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +536,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +547,72 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79CAF7EE2ACB34F900A2111A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kruchman.GameViewControllerUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess the animal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Guess the animal";
+			};
+			name = Debug;
+		};
+		79CAF7EF2ACB34F900A2111A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kruchman.GameViewControllerUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess the animal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Guess the animal";
+			};
+			name = Release;
+		};
+		79CAF8112ACB66AA00A2111A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kruchman.GameViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guess the animal";
+			};
+			name = Debug;
+		};
+		79CAF8122ACB66AA00A2111A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kruchman.GameViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guess the animal";
 			};
 			name = Release;
 		};
@@ -403,6 +633,24 @@
 			buildConfigurations = (
 				7939970F2A2EC7D7009EA5BF /* Debug */,
 				793997102A2EC7D7009EA5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CAF7F02ACB34F900A2111A /* Build configuration list for PBXNativeTarget "GameViewControllerUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CAF7EE2ACB34F900A2111A /* Debug */,
+				79CAF7EF2ACB34F900A2111A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CAF8102ACB66AA00A2111A /* Build configuration list for PBXNativeTarget "GameViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CAF8112ACB66AA00A2111A /* Debug */,
+				79CAF8122ACB66AA00A2111A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

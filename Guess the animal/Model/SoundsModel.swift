@@ -8,15 +8,15 @@
 import UIKit
 import AVFoundation
 
-class SoundsModel {
+final class SoundsModel {
     
-    var player: AVAudioPlayer!
+    private var player: AVAudioPlayer!
     
-    let arrayOfRightSounds = ["right first", "right second", "right third"]
+    private let arrayOfRightSounds = ["right first", "right second", "right third"]
     
-    var isSoundOn = true
+     var isSoundOn = true
     
-    func enableSound() {
+     func enableSound() {
             do {
                 try AVAudioSession.sharedInstance().setCategory(.playback, options: [])
                 try AVAudioSession.sharedInstance().setActive(true)
